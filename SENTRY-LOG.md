@@ -1,0 +1,1 @@
+- 2026-11-11 16:26 Step 1 done: Step 1 complete: Project initialized with npm, TypeScript, Vitest, and Husky installed. Directory structure packages/core, packages/cli, packages/vscode created. Root tsconfig.json configured. Core package (@sentry/core) set up with version export and a passing vitest test (1/1 tests passed).
