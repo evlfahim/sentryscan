@@ -1,0 +1,17 @@
+{
+  "name": "sentryscan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
