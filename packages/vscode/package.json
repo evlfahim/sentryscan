@@ -1,0 +1,35 @@
+{
+  "name": "sentry-scan-vscode",
+  "displayName": "SentryScan",
+  "description": "A modular secret scanner with entropy detection, staged analysis, and redaction.",
+  "version": "0.1.0",
+  "publisher": "sentryscan",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sentry.scan",
+        "title": "Scan with SentryScan"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "vscode:prepublish": "npm run build",
+    "package": "vsce package --no-dependencies"
+  },
+  "dependencies": {
+    "@sentry/core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/vscode": "^1.80.0",
+    "@vscode/vsce": "^2.22.0",
+    "typescript": "^5.0.0",
+    "vitest": "^5.1.0"
+  }
+}
